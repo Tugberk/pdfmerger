@@ -1,8 +1,14 @@
 #!/bin/python3
 
 from PyPDF2 import PdfMerger
+import sys
 
-pdfs = ['week1.pdf','Week 2.pdf']
+#get args
+pdfs = []
+pdfs.append(sys.argv[1])
+pdfs.append(sys.argv[2])
+
+#pdfs = ['week1.pdf','Week 2.pdf']
 
 merger = PdfMerger()
 
